@@ -21,8 +21,11 @@ jobs:
     defaults:
       run:
         shell: bash
- 
+        
     steps:
+    - name: CheckEnvVars
+      run: echo ${{ secrets.AZURE_AD_CLIENT_ID }}
+ 
     # Checkout the repository to the GitHub Actions runner
     - name: Checkout
       uses: actions/checkout@v3
