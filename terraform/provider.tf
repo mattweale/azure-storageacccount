@@ -9,7 +9,7 @@ terraform {
     resource_group_name  = "rg-permanent"
     storage_account_name = "mrwterraformstate"
     container_name       = "terraform-state"
-    key                  = "terraform-state-azure-nebula"
+    key                  = "terraform-state-azure-sa-fireall-test"
   }
 }
 
